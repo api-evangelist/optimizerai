@@ -1,7 +1,29 @@
 aid: optimizerai
 name: OptimizerAI
-description: OptimizerAI is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  OptimizerAI is an AI-powered sound effects (SFX) foundation model that
+  generates unlimited, high-quality, royalty-free audio from text prompts or
+  reference audio, built for game developers, video producers, filmmakers, and
+  other creators. Its text-to-SFX v2 model produces studio-quality stereo
+  output at 44.1 kHz up to 60 seconds long, with sound variations, style
+  selection, and a "magic prompt" mode that interprets situational
+  descriptions. OptimizerAI, Inc. offers a commercial API on tiered
+  dedicated/shared plans with SLA guarantees, authenticated with a
+  project-specific API key sent over an HTTPS header. The company is backed by
+  Andreessen Horowitz (a16z).
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://optimizerai.xyz/images/favicon.png
 url: https://raw.githubusercontent.com/api-evangelist/optimizerai/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +33,73 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-apis: []
+- Sound Effects
+- Audio
+- Generative AI
+- Text to Audio
+- Game Development
+- Media and Entertainment
+- Machine Learning
+- Creator Tools
+apis:
+- name: OptimizerAI Text-to-SFX API
+  description: >-
+    Commercial sound-effects generation API exposing the OptimizerAI
+    text-to-sfx v2 model. Access is contract-based (annual pre-payment) across
+    Ultra-Fast/Fast (dedicated) and Slow (shared) tiers, each with a monthly
+    call allowance, overage pricing, and an uptime SLA. Requests are
+    authenticated with a project-specific API key sent via an HTTPS header.
+  humanURL: https://docs.optimizerai.xyz/api/pricing
+  tags:
+  - Sound Effects
+  - Audio
+  - Generative AI
+  properties:
+  - type: Documentation
+    url: https://docs.optimizerai.xyz/api/pricing
+  - type: Pricing
+    url: https://docs.optimizerai.xyz/api/pricing
+  - type: Authentication
+    url: authentication/optimizerai-authentication.yml
+  - type: Lifecycle
+    url: lifecycle/optimizerai-lifecycle.yml
+  - type: Conventions
+    url: conventions/optimizerai-conventions.yml
+common:
+- type: Website
+  url: https://www.optimizerai.xyz/
+- type: DeveloperPortal
+  url: https://docs.optimizerai.xyz/
+- type: Documentation
+  url: https://docs.optimizerai.xyz/api/pricing
+- type: Pricing
+  url: https://docs.optimizerai.xyz/api/pricing
+- type: Blog
+  url: https://www.optimizerai.xyz/blog
+- type: TermsOfService
+  url: https://sprinkle-cartwheel-102.notion.site/Terms-of-Service-10606d5cf0e680bb830afedd4e62ec40
+- type: PrivacyPolicy
+  url: https://app.termly.io/document/privacy-policy/3b0fd428-814d-4aee-8b38-5e96a3024dad
+- type: Authentication
+  url: authentication/optimizerai-authentication.yml
+- type: Lifecycle
+  url: lifecycle/optimizerai-lifecycle.yml
+- type: Conventions
+  url: conventions/optimizerai-conventions.yml
+- type: DomainSecurity
+  url: security/optimizerai-domain-security.yml
+- type: LLMsTxt
+  url: llms/optimizerai-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 6
+  pass: local-v1

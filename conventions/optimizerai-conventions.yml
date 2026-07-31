@@ -1,0 +1,33 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.optimizerai.xyz/api/pricing
+summary: >-
+  Cross-cutting request/response conventions for the OptimizerAI text-to-SFX
+  API, captured from the public API Pricing & SLA documentation. The public
+  docs are a pricing/SLA proposal rather than a full API reference, so several
+  conventions (pagination, error envelope, request tracing) are not publicly
+  documented and are omitted here rather than fabricated.
+authentication:
+  style: api-key
+  location: HTTPS header
+  scope: project-specific
+  ref: authentication/optimizerai-authentication.yml
+transport:
+  protocol: https
+  media: audio (stereo, 44.1 kHz, up to 60s) generated from text or reference audio
+idempotency:
+  supported: unknown
+  notes: No idempotency-key header or contract is documented on the public docs.
+pagination:
+  supported: unknown
+  notes: Not documented on the public docs (generation API, not a list surface).
+rate_limiting:
+  quota_default: 1,000,000 calls/month (higher on request)
+  tiering: dedicated (Ultra-Fast/Fast) vs shared (Slow) throughput tiers
+  ref: lifecycle/optimizerai-lifecycle.yml
+versioning:
+  scheme: model-version (text-to-sfx v2)
+  ref: lifecycle/optimizerai-lifecycle.yml
+error_envelope:
+  shape: unknown
+  notes: Error format not documented on the public docs.

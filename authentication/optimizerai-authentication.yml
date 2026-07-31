@@ -1,0 +1,24 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.optimizerai.xyz/api/pricing
+docs: https://docs.optimizerai.xyz/api/pricing
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - header
+  oauth2_flows: []
+  notes: >-
+    OptimizerAI authenticates each request with a project-specific API key sent
+    over an HTTPS header, per the published API Pricing & SLA documentation.
+    Keys are scoped to a project/contract; there is no public OAuth or OpenID
+    Connect surface. Exact header name and key issuance flow are not published
+    on the public docs and are provisioned as part of a commercial contract.
+schemes:
+- name: ApiKeyAuth
+  type: apiKey
+  in: header
+  scope: project
+  transport: https
+  sources:
+  - https://docs.optimizerai.xyz/api/pricing

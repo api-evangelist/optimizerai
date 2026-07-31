@@ -1,0 +1,32 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.optimizerai.xyz/api/pricing
+versioning:
+  scheme: model-version
+  current: text-to-sfx-v2
+  notes: >-
+    The API surfaces the OptimizerAI text-to-sfx v2 model. No dated API version
+    scheme (URI path / header / version train) is published on the public docs.
+  docs: https://docs.optimizerai.xyz/api/pricing
+sla:
+  url: https://docs.optimizerai.xyz/api/pricing
+  uptime_targets:
+    ultra_fast: '99.9%'
+    fast: '99.9%'
+    slow: '99.5%'
+  breach_credit: 10% of monthly fee
+  latency_targets: per-tier response-latency targets for the text-to-sfx v2 model
+  contract_term: 1 year (annual pre-payment)
+  quota_default: 1,000,000 calls/month (higher available on request)
+  new_endpoints: all new endpoints released during the contract term included at no extra cost
+deprecation:
+  policy_url: null
+  sunset_header: null
+  notes: No public deprecation / sunset policy documented.
+status_page: null
+deprecated_operations: []
+notes: >-
+  No public status page (status.optimizerai.xyz did not resolve) and no
+  published deprecation policy were found; SLA/uptime commitments are documented
+  only within the commercial API pricing proposal. StatusPage / Deprecation
+  canonical pointers are intentionally NOT emitted (absent = valid result).

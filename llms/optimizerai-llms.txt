@@ -1,0 +1,23 @@
+# OptimizerAI
+
+> OptimizerAI is an AI-powered sound effects (SFX) foundation model that generates unlimited, high-quality, royalty-free audio from text prompts or reference audio for game developers, video producers, filmmakers, and other creators. Its text-to-sfx v2 model produces studio-quality stereo output at 44.1 kHz up to 60 seconds, with sound variations, style selection, and a "magic prompt" mode. OptimizerAI, Inc. offers a commercial, contract-based API authenticated with a project-specific API key over HTTPS. The company is backed by Andreessen Horowitz (a16z).
+
+## APIs
+- [OptimizerAI Text-to-SFX API](https://docs.optimizerai.xyz/api/pricing): Commercial sound-effects generation API (text-to-sfx v2). Contract-based access across Ultra-Fast/Fast (dedicated) and Slow (shared) tiers with monthly call allowances, overage pricing, and uptime SLAs. Auth: project-specific API key via HTTPS header.
+
+## Docs
+- [Developer Portal](https://docs.optimizerai.xyz/): OptimizerAI documentation home.
+- [API Pricing & SLA](https://docs.optimizerai.xyz/api/pricing): Tiers, per-call pricing, SLA/uptime targets, quota, and authentication.
+- [Blog](https://www.optimizerai.xyz/blog): Articles on AI sound-effect generation for creators and game developers.
+
+## Artifacts
+- [Authentication](https://raw.githubusercontent.com/api-evangelist/optimizerai/refs/heads/main/authentication/optimizerai-authentication.yml): API-key-over-HTTPS auth profile.
+- [Lifecycle](https://raw.githubusercontent.com/api-evangelist/optimizerai/refs/heads/main/lifecycle/optimizerai-lifecycle.yml): SLA/uptime, versioning (text-to-sfx v2), quota.
+- [Conventions](https://raw.githubusercontent.com/api-evangelist/optimizerai/refs/heads/main/conventions/optimizerai-conventions.yml): Cross-cutting request/response semantics.
+- [Domain Security](https://raw.githubusercontent.com/api-evangelist/optimizerai/refs/heads/main/security/optimizerai-domain-security.yml): TLS/HSTS/DNSSEC/SPF/DMARC probe results.
+
+## Company
+- [Website](https://www.optimizerai.xyz/): OptimizerAI product site.
+- [Terms of Service](https://sprinkle-cartwheel-102.notion.site/Terms-of-Service-10606d5cf0e680bb830afedd4e62ec40)
+- [Privacy Policy](https://app.termly.io/document/privacy-policy/3b0fd428-814d-4aee-8b38-5e96a3024dad)
+- Backed by: Andreessen Horowitz (a16z)
