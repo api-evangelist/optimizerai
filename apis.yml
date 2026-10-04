@@ -54,7 +54,7 @@ tags:
 - Text to Audio
 - Game Development
 - Media and Entertainment
-- Machine-Learning
+- Machine Learning
 - Creator Tools
 tags_raw:
 - Company
@@ -66,6 +66,7 @@ tags_raw:
 - Media and Entertainment
 - Machine Learning
 - Creator Tools
+- Machine-Learning
 apis:
 - name: OptimizerAI Text-to-SFX API
   description: >-
