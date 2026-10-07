@@ -92,6 +92,8 @@ apis:
   - type: Conventions
     url: conventions/optimizerai-conventions.yml
 common:
+- type: Plans
+  url: plans/optimizerai-plans-pricing.yml
 - type: Website
   url: https://www.optimizerai.xyz/
 - type: DeveloperPortal
