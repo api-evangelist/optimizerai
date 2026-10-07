@@ -1,0 +1,51 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://docs.optimizerai.xyz/api/pricing
+sources:
+- https://docs.optimizerai.xyz/api/pricing
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: developer-api
+pricing_basis: per-call
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-07'
+published: true
+note: All plans billed annually in advance; unused monthly calls do not roll over. SLA table also mentions
+  an 'Ultra-Fast' tier with no price listed.
+plan_count: 3
+currency: USD
+plans:
+- name: Fast (Dedicated)
+  price_text: USD 790
+  price: 790
+  currency: USD
+  period: month
+  unit: monthly fee
+  included_quota: includes 2 000 calls
+  overage: USD 0.158 / call (40 % of base) for 2 001 – 20 000 calls; USD 0.079 / call (20 % of base) for
+    20 001 + calls
+- name: Medium (Dedicated)
+  price_text: USD 420
+  price: 420
+  currency: USD
+  period: month
+  unit: monthly fee
+  included_quota: includes 2 000 calls
+  overage: USD 0.084 / call (40 % of base) for 2 001 – 20 000 calls; USD 0.042 / call (20 % of base) for
+    20 001 + calls
+- name: Slow (Shared)
+  price_text: USD 160
+  price: 160
+  currency: USD
+  period: month
+  unit: monthly fee
+  included_quota: includes 2 000 calls
+  overage: USD 0.080 / call (base price) for 2 001 – 20 000 calls; USD 0.040 / call (50 % off) for 20
+    001 + calls
+rate_limit_statements:
+- 'Default monthly quota: 1 000 000 calls; higher limits available on request.'
