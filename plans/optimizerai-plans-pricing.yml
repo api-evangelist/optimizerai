@@ -49,3 +49,34 @@ plans:
     001 + calls
 rate_limit_statements:
 - 'Default monthly quota: 1 000 000 calls; higher limits available on request.'
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - hybrid
+  units: []
+  plans:
+  - name: Fast (Dedicated)
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - other
+    periods:
+    - month
+  - name: Medium (Dedicated)
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - other
+    periods:
+    - month
+  - name: Slow (Shared)
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - other
+    periods:
+    - month
